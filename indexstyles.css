@@ -1,0 +1,426 @@
+:root {
+    --grey-1: hsl(212, 33%, 89%);
+    --grey-2: hsl(210, 31%, 80%);
+    --grey-3: hsl(211, 27%, 70%);
+    --grey-4: hsl(209, 23%, 60%);
+    --grey-5: hsl(210, 22%, 49%);
+    --grey-6: hsl(209, 28%, 39%);
+    --grey-7: hsl(209, 34%, 30%);
+    --grey-8: hsl(211, 39%, 23%);
+    --grey-9: hsl(209, 61%, 16%);
+    --white: #ffffff;
+    --main-blue: #2188cf;
+    --second-blue: #196191;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex";
+    overflow-x: hidden;
+}
+
+main {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Start of header */
+header {
+    text-align: center;
+    background-color: var(--main-blue);
+}
+
+header h1 {
+    padding: 25px 20px;
+    color: #fff;
+}
+/* End of header */
+
+/* Start of navbar */
+#main-nav {
+    color: #fff;
+    font-size: 18px;
+    background-color: #066aac;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#main-nav ul li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#main-nav ul li a {
+    padding: 8px 5px;
+    width: 60%;
+    margin: 2px 0;
+    height: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#main-nav ul li a:hover {
+    color: #ff5555;
+    background-color: hsl(204, 70%, 61%);
+    border-radius: 18px;
+}
+/* End of navbar */
+
+/* Start of main for all pages */
+#home,
+#services,
+#contact {
+    padding: 35px 250px;
+}
+/* End of main for all pages*/
+
+/* Start of description for home page */
+#home #description h2 {
+    text-align: center;
+    color: var(--main-blue);
+}
+
+#home #description p {
+    padding: 20px 10px;
+}
+
+#home #description #display_pic img {
+    margin: 20px auto;
+    display: block;
+    height: 160px;
+    width: 360px;
+}
+
+#home #display_pic p {
+    text-align: center;
+}
+/* End of description for home page */
+
+/* Start of updates/recent activity for home page */
+#home #updates {
+    padding-top: 70px;
+}
+
+#home #updates h2 {
+    padding: 20px;
+    text-align: center;
+    color: var(--main-blue);
+}
+
+#home #updates p {
+    padding: 10px 0;
+}
+
+#home #updates ul li:first-of-type {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#home #updates ul {
+    padding: 5px;
+}
+
+#home #updates ul li {
+    padding: 5px 0;
+    list-style-position: inside;
+}
+/* End of updates/recent activity for home page */
+
+/* Start of services */
+#services h2 {
+    text-align: center;
+    color: var(--main-blue);
+}
+
+#services #services-head h2 {
+    margin-bottom: 20px;
+}
+
+#services img {
+    width: 30vw;
+    height: 30vh;
+    margin: 10px auto;
+    display: block;
+}
+
+#services .cars {
+    text-align: center;
+    margin: 40px;
+}
+
+#services li {
+    list-style-type: none;
+    margin: 4px;
+}
+/* End of services */
+
+/* Start of contact */
+form {
+    border-radius: 5px;
+    background-color: #2198cf;
+    padding: 20px;
+    box-shadow: 0 0 20px #4c4c4c;
+    width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset ol {
+    list-style-type: none;
+}
+
+fieldset legend {
+    margin-bottom: 10px;
+}
+
+fieldset ol li {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    background: var(--grey-1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Ensure label, input, and error stack vertically */
+    align-content: flex-start;
+}
+
+fieldset#contact-fieldset ol li input {
+    line-height: 18px;
+}
+
+fieldset ol li label {
+    float: left;
+    margin-left: 15px;
+    width: 35%;
+}
+
+fieldset ol li input {
+    border-radius: 4px;
+    padding: 2px 10px;
+    margin: 5px 0 0 15px;
+    width: 70%;
+}
+
+#feedback {
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 95%;
+    display: block;
+    margin: 5px 0 0 15px;
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 10px;
+}
+
+main#contact button {
+    padding: 5px 16px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 16px;
+    background-color: var(--grey-2);
+}
+
+main#contact button:hover {
+    color: #ff4242;
+} 
+
+.error {
+    color: #ff3737;
+    font-size: 16px;
+    margin: 5px 0 0 15px; /* Add spacing between input and error message */
+}
+/* End of contact */
+
+/* Start of footer */
+footer {
+    background-color: #066aac;
+    width: 100%;
+    padding: 40px 220px 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer #bottom-header {
+    color: #fff;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer #bottom-nav {
+    text-align: center;
+}
+
+footer #bottom-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer #bottom-nav ul li {
+    width: 80px;
+}
+
+footer #bottom-nav ul li a {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    text-align: center;
+}
+
+footer #bottom-nav ul li a:hover{
+    color: #ff5555;
+    text-decoration: underline;
+}
+/* End of footer */
+
+@media (max-width: 680px) {
+    header,
+    footer,
+    nav ul li {
+        width: 100%;
+    }
+
+    /* Start of main navbar */
+    #main-nav ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #main-nav ul li {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #333;
+    } 
+
+    #main-nav ul li a:hover {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    /* End of main navbar */
+    
+    /* main section of each page */
+    #home,
+    #services,
+    #contact {
+        padding: 35px 40px;
+    }
+
+    /* main picture on home page */
+    #home #description #display_pic img {
+        margin: 0 auto;
+        display: block;
+        height: 120px;
+        width: 260px;
+    }
+
+    /* updates section */
+    #home #updates {
+        padding-top: 30px;
+    }
+
+    /* services section */
+    #services img {
+        width: 60vw;
+        height: 15vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #services .cars img {
+        margin: 0 auto;
+    }
+    /* End of services */
+
+    /* contact section */
+    main#contact {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    main#contact form {
+        width: 90%;
+    }
+
+    main#contact fieldset#contact-fieldset ol li {
+        padding: 6px 10px;
+        flex-direction: column; /* Ensure vertical stacking in media query */
+    }
+
+    main#contact fieldset#contact-fieldset ol li input {
+        line-height: 20px;
+    }
+
+    main#contact fieldset#contact-fieldset ol li label {
+        width: 100%; /* Adjust label width for smaller screens */
+    }
+
+    main#contact fieldset#feedback-fieldset ol li {
+        display: block;
+    }
+
+    main#contact fieldset#feedback-fieldset ol li label {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    main#contact fieldset#feedback-fieldset ol li textarea {
+        margin: 10px;
+        width: 90%;
+    }
+
+    .error {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-top: 5px;
+    }
+    /* end of contact section */
+
+    /* Start of footer */
+    footer {
+        padding: 35px 50px;
+        text-align: center;
+    }
+
+    footer #bottom-header {
+        margin-top: 20px;
+    }
+
+    footer #bottom-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer #bottom-nav ul li {
+        margin: 5px 0;  
+    }
+
+    footer #bottom-nav ul li a {
+        text-align: center;
+    }
+    /* End of footer */
+}

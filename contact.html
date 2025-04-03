@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="indexstyles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Warang+Citi&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
+        <title>Exotics Central - Contact Page</title>
+    </head>
+    <body>
+        <header><h1>Exotics Central</h1></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../Olando_McDonald_P4/index.html">Home</a></li>
+                <li><a href="../Olando_McDonald_P4/services.html">Services</a></li>
+                <li><a href="../Olando_McDonald_P4/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="contact">
+            <form>
+                <fieldset id="contact-fieldset">
+                    <legend>Contact Info</legend>
+                    <ol>
+                        <li>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" value="" autofocus="autofocus" placeholder="John Doe" maxlength="25" />
+                            <div class="error" id="name_error">* Please enter your name</div>
+                        </li>
+                        <li>
+                            <label for="number">Phone Number</label>
+                            <input id="number" name="number" type="tel" value="" placeholder="(204) 777-7777" />
+                            <div class="error" id="number_error">* Please enter a valid phone number</div>
+                            <div class="error" id="invalidPhone_error">* Invalid phone number</div>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" value="" placeholder="example@gmail.com" />
+                            <div class="error" id="email_error">* Please enter a valid email address</div>
+                            <div class="error" id="invalidEmail_error">* Invalid email address</div>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset id="feedback-fieldset">
+                    <ol>
+                        <li>
+                            <label for="feedback">Feedback</label>
+                            <textarea id="feedback" name="comments" type="text" value="" placeholder="Tell us what you think about our page or services" rows="12" cols="50"></textarea>
+                        </li>
+                    </ol>
+                    <div id="button-div">
+                        <button id="submit">Submit</button>
+                        <button id="reset" onclick="return resetForm()">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav id="bottom-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Olando_McDonald_P4/services.html">Services</a></li>
+                    <li><a href="../Olando_McDonald_P4/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="bottom-header"><h2>Thank you for checking out our page</h2></div>
+        </footer>
+        <script src="validation.js" defer></script>
+    </body>
+</html>
