@@ -1,6 +1,6 @@
 function validate(e) {
     // hides all error messages on the page
-    hideErrors();    
+    hideErrors();
 
     if (formHasErrors()) {
         // prevents the form from submitting
