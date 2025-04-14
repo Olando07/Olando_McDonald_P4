@@ -219,7 +219,7 @@ fieldset ol li input {
     width: 70%;
 }
 
-fieldset ol li input, textarea:focus{
+fieldset ol li input:focus, textarea:focus{
     background-color: #8dd3f3;
     color: #000;
 }
