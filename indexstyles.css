@@ -241,15 +241,18 @@ fieldset ol li input:focus{
 }
 
 main#contact button {
-    padding: 5px 16px;
+    padding: 8px 20px;
     border-radius: 15px;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--grey-2);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
 }
 
 main#contact button:hover {
     color: #ff4242;
+    background-color: #8dd3f3;
 } 
 
 .error {
